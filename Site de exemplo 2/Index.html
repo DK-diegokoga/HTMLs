@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link href="style2.css" rel="stylesheet">
+    <script type="text/javascript" src="arquivo.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+            <nav>
+                <a href="" onclick="mensagem1()">Click1</a>
+                <a href="" onclick="mensagem2()">Click2</a>
+                <a href="" onclick="mensagem3()">Click3</a>
+                <a href="" onclick="mensagem4()">Click4</a>
+                <a href="" onclick="mensagem5()">Click5</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <p>Esportes política e tecnologia</p>
+        </section>
+        <article>
+            <h2>Notícias sobre cinema</h2>
+            <p> <strong>Lorem</strong> ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. <em>Earum</em> illo magnam laboriosam illum corporis id iure! Est beatae, molestias, doloremque quod doloribus vero praesentium, maiores dicta reiciendis ad voluptatibus sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur perspiciatis asperiores, cum iusto accusamus velit hic laboriosam doloremque animi odit blanditiis sint, mollitia reiciendis soluta, quod similique molestiae eos?</p>        
+            <aside>
+               <ins>Artigo</ins>  escrito por Diego Koga
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <abbr title="">Diego Koga</abbr> </p>
+        <label id="id" onmouseover="show('data-escondida')" onmouseout="hide('data-escondida')">Passe o mouse aqui.</label>        
+        <div id="data-escondida">
+            <p>
+                <script>
+                    data = new Date();
+                    document.write(data.toLocaleString());
+                </script>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
