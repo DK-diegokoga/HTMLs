@@ -41,7 +41,12 @@ div{
 .underline{
     background: rgb(17, 16, 16);
     height: 1px;
+}
 
+nav > .voltar{
+    display: grid;
+    margin: 0;
+    padding: 0;
 }
 
 nav > a{
@@ -60,60 +65,45 @@ nav > a:hover{
     background: linear-gradient(to right,#a19e9c, #8b8581);
 }
 
-.aluno{
+#aluno{
+    border: solid;
+}
+
+.pdf{
+    border-radius: 100px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: rgb(255, 39, 39);
+    border:solid red;
+    color: white;
+}
+
+.primeiro{
     border: black 2px solid;  
     margin: 0;
+    padding: 10px;
 }
 
-.presente{
+h3{
+    margin-right: 60px;
+}
+
+.segundo{
+    border: black 2px solid;  
     margin: 0;
-    border-top: black 2px solid;  
+    padding: 10px;
 }
 
-.faltou{
+label{
+    font-size: 20px;
+}
+
+
+
+.geral{
+    border: black 2px solid;  
     margin: 0;
-    border-top: black 2px solid;  
-}
-
-.cancelar{
-    background: red;
-    padding: 0.7rem;
-    border-radius: 6px;
-    border: black 2px solid;
-    cursor: pointer;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.cancelar:hover{
-    letter-spacing: 0.3px;
-    background: linear-gradient(to right,#ff6c6c, #ee3030);
-}
-
-.adicionar{
-    background: rgb(39, 223, 39);
-    padding: 0.7rem;
-    border-radius: 6px;
-    border: black 2px solid;
-    margin: 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.adicionar:hover{
-    letter-spacing: 0.3px;
-    background: linear-gradient(to right,#79f341, #5ceb30);
-}
-
-nav > .voltar{
-display: grid;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
 }
