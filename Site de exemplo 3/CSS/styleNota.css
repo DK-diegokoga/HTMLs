@@ -58,3 +58,29 @@ nav > a:hover{
     letter-spacing: 0.5px;
     background: linear-gradient(to right,#a19e9c, #8b8581);
 }
+
+.aluno{
+    border: black 2px solid;  
+    margin: 0;
+}
+
+.p1{
+    margin: 0;
+    border-top: black 2px solid;  
+}
+
+.p2{
+    margin: 0;
+    border-top: black 2px solid;  
+}
+
+.presente{
+    margin: 0;
+    border-top: black 2px solid;  
+}
+
+.t{
+    margin: 0;
+    border-top: black 2px solid;  
+}
+
