@@ -93,7 +93,7 @@ form .input-field:first-child{
     color: rgba(0, 0, 0, 0.5);
 }
 
-form a > input[type="button"]{
+form > input[type="submit"]{
     width: 100%;
     margin-top: 2rem;
     padding: 0.4rem;
@@ -106,7 +106,7 @@ form a > input[type="button"]{
     transition: all 0.3s ease;
 }
 
-form a >input[type="button"]:hover{
+form >input[type="submit"]:hover{
     letter-spacing: 0.5px;
     background: linear-gradient(to right,#f1d8c9, #f1bfa3);
 }

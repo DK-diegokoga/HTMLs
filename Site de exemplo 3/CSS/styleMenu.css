@@ -26,15 +26,22 @@ body{
 
 div{
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 
-div > a > input{
+div >  input{
     padding: 10px;
     width: 100px;
 }
 
-div > a >  #btn1, #btn2, #btn3, #btn4, #btn5,#btn6,#btn7 , #btn8{
+div > .radios{
+    padding: 0;
+    margin: auto;
+    width: 50%;
+    border: solid black;
+}
+
+div >   #btn1, #btn2, #btn3, #btn4, #btn5,#btn6,#btn7 , #btn8{
     border-style: solid;
     border-color: black;
     border-radius: 10px;
@@ -43,15 +50,15 @@ div > a >  #btn1, #btn2, #btn3, #btn4, #btn5,#btn6,#btn7 , #btn8{
     box-shadow: 2px 2px 4px  rgb(17, 16, 16);
 }
 
-div > a > #btn1, #btn2, #btn3, #btn4, #btn5{
+div >  #btn1, #btn2, #btn3, #btn4, #btn5{
     background-color: cadetblue;
 }
 
-div > a > #btn6{
+div > #btn6{
     background-color:lime;
 }
 
-div > a > #btn7 , #btn8{
+div > #btn7 , #btn8{
     background-color: rgb(112, 112, 112);
 }
 
@@ -86,4 +93,25 @@ div > a > #btn7 , #btn8{
 #btn8:hover{
     background-color:rgb(165, 165, 165);
     cursor: pointer;
+}
+
+a > #btn9{
+    padding: 2px;
+    width: 100px;
+}
+
+a > button{
+    width: 100%;
+    background: linear-gradient(to left,#f1d8c9, #f1bfa3);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+a >button:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right,#f1d8c9, #f1bfa3);
 }
