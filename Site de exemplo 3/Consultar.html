@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar</title>
     <link rel="stylesheet" href="CSS/styleConsultar.css">
+    <script type="text/javascript">
+        function mensagem() {
+           var btn = document.querySelector(".pdf");
+           alert("Vai gerar o PDF aqui!");
+       };
+   </script>
 </head>
 <body>
     <div class="tela">
@@ -22,18 +28,18 @@
             <div class="underline"></div>
             <div class="primeiro">
                 <input type="date" name="data" id="data">
-                <input type="button" value="PDF" class="pdf">
+                <input type="button" value="PDF" class="pdf" onclick="mensagem()">
             </div>
 <br>
             <div class="segundo">
                 <h3>Aluno/RA</h3>
                 <input type="text" name="" id="aluno">
-                <input type="button" value="PDF" class="pdf">
+                <input type="button" value="PDF" class="pdf" onclick="mensagem()">
             </div>
 <br>
             <div class="geral">
                 <strong><label for="">Geral</label></strong>
-                <input type="button" value="PDF" class="pdf">
+                <input type="button" value="PDF" class="pdf" onclick="mensagem()">
             </div>
         </div>
     </div>
