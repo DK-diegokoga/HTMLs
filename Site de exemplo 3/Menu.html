@@ -6,20 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="CSS/styleMenu.css">
-    <script type="text/javascript">
-         function tela() {
-            var radios = document.getElementsByName("escolha");
-            for (var i = 0; i < radios.length; i++) {
-                if (radios[i].checked) {
-                    if(radios[i].value == "FALTAS"){
-                        window.location.href='Adicionar.html';
-                    }else{
-                        window.location.href='Nota.html';
-                    }   
-                }
-            }
-        };
-    </script>
+    <script type="text/javascript" src="JS/script.js"></script>
 </head>
 <body>
     <div class="tela">
@@ -31,20 +18,20 @@
                 <strong><input type="radio" name="escolha" id="nota" value="FALTAS">FALTAS</strong>    
             </div>       
             <div>
-                <input type="button" value="AOC" id="btn1" onclick="tela()">
-                <input type="button" value="LBH" id="btn2" onclick="tela()">
+                <input type="button" value="AOC" id="btn1" onclick="chamaTela()">
+                <input type="button" value="LBH" id="btn2" onclick="chamaTela()">
             </div>
             <div>
-                <input type="button" value="SO1" id="btn3" onclick="tela()">
-                <input type="button" value="BD" id="btn4" onclick="tela()">
+                <input type="button" value="SO1" id="btn3" onclick="chamaTela()">
+                <input type="button" value="BD" id="btn4" onclick="chamaTela()">
             </div>
             <div>
-                <input type="button" value="LBD" id="btn5" onclick="tela()">
-                <input type="button" value="MPC" id="btn6" onclick="tela()">
+                <input type="button" value="LBD" id="btn5" onclick="chamaTela()">
+                <input type="button" value="MPC" id="btn6" onclick="chamaTela()">
             </div>
             <div>
-                <input type="button" value="AOC" id="btn7" onclick="tela()">
-                <input type="button" value="SO1" id="btn8" onclick="tela()">
+                <input type="button" value="AOC" id="btn7" onclick="chamaTela()">
+                <input type="button" value="SO1" id="btn8" onclick="chamaTela()">
             </div>    
             <a href="Login.html"><button type="button" id="sair">SAIR</button></a>
         </div>

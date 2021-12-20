@@ -6,39 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="CSS/styleLogin.css">
-    <script type="text/javascript">
-        function validar(){
-           var user = formulario.username.value;
-           var senha = formulario.password.value;
-
-           if(user == ""){
-               alert("Preencha o campo usuario");
-               formulario.username.focus();
-               return false;
-           }else{
-               if(user == "Colevati"){
-                    return true;
-               }else{
-                   alert("Login não tem acesso");
-                   formulario.username.focus();
-                   return false;
-               }
-           }
-           if(senha == ""){
-                alert("Preencha o campo senha");
-               formulario.password.focus();
-               return false;
-           }else{
-               if(senha == "123"){
-                    return true;
-               }else{
-                    alert("Login não tem acesso");
-                    formulario.password.focus();
-                   return false;
-               }
-           }
-        }
-    </script>
+    <script type="text/javascript" src="JS/script.js"></script>
 </head>
 <body>
     <main class="container">
