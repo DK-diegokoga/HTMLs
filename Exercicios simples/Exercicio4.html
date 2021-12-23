@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maior valor</h1>
+    <input type="number" placeholder="Insira o primeiro valor" id="primeiroValor">
+    <input type="number" placeholder="Insira o segundo valor" id="segundoValor">
+    <input type="button" onclick="minhaFuncao()" value="Clique para começar"/>
+    
+    <div id="resultado">
+        
+    </div>
+
+    <script>
+        function minhaFuncao() {
+            var n1 = document.getElementById('primeiroValor').value;
+            var n2 = document.getElementById('segundoValor').value;
+            if (n1 == "" || n2 == ""){
+                document.getElementById('resultado').innerHTML = 'TA VAZIO A PARADA MANÉ!';
+                document.getElementById('resultado').style.color = 'red';
+                Limpar();
+                document.getElementById('primeiroValor').focus();
+            }else{
+                if (n1 > n2) {
+                    document.getElementById('resultado').innerHTML = 'Analisando os valores '+ n1 + ' e ' + n2 +', o maior valor é ' + n1
+                    document.getElementById('resultado').style.color = 'green';
+                    Limpar();
+                } else if (n1 < n2) {
+                    document.getElementById('resultado').innerHTML = 'Analisando os valores '+ n1 + ' e ' + n2 +', o maior valor é ' + n2
+                    document.getElementById('resultado').style.color = 'green';
+                    Limpar();
+                } else {
+                    document.getElementById('resultado').innerHTML = 'Analisando os valores '+ n1 + ' e ' + n2 +', eles são iguais'
+                    document.getElementById('resultado').style.color = 'blue';
+                    Limpar();
+                }
+            }
+        }
+        function Limpar(){
+            document.getElementById('primeiroValor').value = '';
+            document.getElementById('segundoValor').value = '';
+        }
+    </script>
+</body>
+</html>

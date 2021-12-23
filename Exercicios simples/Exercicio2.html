@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GetElementByName</h1>
+    <input type="text" placeholder="Informe um texto" id="valor" name="texto">
+    <input type="text" placeholder="Informe um texto" name="texto">
+
+    <button onclick="minhaFuncao()">Clique-me</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function minhaFuncao(){
+            var texto1 = document.getElementsByName('texto')[0].value; //Melhor performance
+            var texto2 = document.getElementsByName('texto')[1].value; //Melhor performance
+            document.getElementById('resultado').innerHTML = texto1+"  "+texto2;
+        }
+    </script>
+</body>
+</html>
